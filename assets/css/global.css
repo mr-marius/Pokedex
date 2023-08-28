@@ -1,0 +1,30 @@
+* {
+    /*Reset padrão*/
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*Corpo da página*/
+body {
+    background-color: #f6f8fc;
+}
+/*Conteúdo principal*/
+.content {
+    background-color: #fff;
+    height: 100vh;
+    padding: 1rem;
+    width: 100vw;
+}
+/*Título*/
+.content-title {
+    display: flex;
+    justify-content: center;
+}
+/*Logo*/
+#logo {
+    width: 15rem;
+}
+
+

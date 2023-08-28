@@ -1,0 +1,166 @@
+/*Estilização da lista com os pokemons*/
+.content-list {
+    /*Display grid com uma coluna para a listagem dos pokemons*/
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*Definição das cores dos pokemons por tipos*/
+.normal {
+    background-color: #807870;
+}
+
+.grass {
+    background-color: #7c5;
+}
+
+.fire {
+    background-color: #e61919;
+}
+
+.water {
+    background-color: #39f;
+}
+
+.electric {
+    background-color: #fc3;
+}
+
+.ice {
+    background-color: #6cf;
+}
+
+.ground {
+    background-color: #db5;
+}
+
+.flying {
+    background-color: #89f;
+}
+
+.poison {
+    background-color: #a59;
+}
+
+.fighting {
+    background-color: #b54;
+}
+
+.psychic {
+    background-color: #f59;
+}
+
+.dark {
+    background-color: #754;
+}
+
+.rock {
+    background-color: #ba6;
+}
+
+.bug {
+    background-color: #ab2;
+}
+
+.ghost {
+    background-color: #66b;
+}
+
+.steel {
+    background-color: #aab;
+}
+
+.dragon {
+    background-color: #76e;
+}
+
+.fairy {
+    background-color: #e9e;
+}
+/*Estilização dos itens(pokemons)*/
+.content-list-item {
+    border-radius: .8rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: .1rem;
+    padding: .8rem 1rem;
+}
+
+.content-list-item-number {
+    color: #0a0a0a;
+    font-size: .925rem;
+    opacity: .4;
+    text-align: right;
+}
+
+.content-list-item-title {
+   margin-bottom: .32rem;
+   text-transform: capitalize;
+}
+
+.description {
+    /*Centralização do conteúdo*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description-list-item {
+    border-radius: .55rem;
+    color: #fff;
+    font-size: .8rem;
+    filter: brightness(1.1);
+    margin: .25rem 0;
+    padding: .25rem .5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+/*Imagens dos pokemons*/
+.description img {
+    /*Alinhando item à direita*/
+    align-self: flex-end;
+    height: 75px;
+    max-width: 100%;
+}
+/*Botão de paginação*/
+.button-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.button-pagination button {
+    background-color: #6c79db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: .55rem;
+    padding: .25rem .5rem;
+}
+/*/Utilização de medias queries para tornar o site responsivo*/
+@media (min-width: 380px) {
+    .content-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 576px) {
+    .content-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .content {
+        border-radius: 1rem;
+        height: auto;
+        max-width: 992px;
+        margin: 1rem auto;
+    }
+
+    .content-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
