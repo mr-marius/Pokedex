@@ -1,8 +1,8 @@
-//Selecionando tag com id pokemon-list
+//Selecting tag with id pokemon-list
 const pokemonOl = document.getElementById('pokemon-list');
-//Selecionando tag com id show-more para paginação
+//Selecting tag with id show-more for paginantion
 const showMoreButton = document.getElementById('show-more');
-const limit = 10;
+const limit = 16;
 let offset = 0;
 
 function showMorePokemons(offset, limit) {
@@ -30,7 +30,7 @@ function showMorePokemons(offset, limit) {
 showMorePokemons(offset, limit);
 
 showMoreButton.addEventListener('click', () => {
+    
     offset += limit;
     showMorePokemons(offset, limit);
 })
-

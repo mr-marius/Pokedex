@@ -1,0 +1,29 @@
+
+.preload-container {
+    background-color: #4a707a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s, visibility 1s;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.preload-hidden {
+    display: none;
+}
+
+.preload-image {
+    animation: pulse ease-in-out 3s infinite;
+    width: 8rem;
+}
+
+@keyframes pulse {
+    to {
+        scale: 1.6;
+    }
+}

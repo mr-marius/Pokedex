@@ -5,5 +5,4 @@ class Pokemon {
     number;
     types = [];
     type;
-
 }

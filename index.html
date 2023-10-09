@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Importção do normalize para que o css seja igual em todos os browsers-->
+    <!--Import normalize css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Importação da fonte roboto-->
+    <!--Import font robot-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <!--Importação dos estilos css global-->
+    <!--Import css-->
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
-    <!--Importação do js-->
-    <script defer src="../assets/js/pokemon-model.js"></script>
-    <script defer src="../assets/js/poke-api.js"></script>
-    <script defer src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/preload.css">
+    <!--Import js-->
+    <script defer src="/assets/js/pokemon-model.js"></script>
+    <script defer src="/assets/js/poke-api.js"></script>
+    <script defer src="/assets/js/main.js"></script>
+    <script src="/assets/js/preload.js"></script>
     <title>Pokedex</title>
 </head>
 <body>
+    <!--Preload-->
+    <section class="preload-container">
+        <img src="/assets/img/pokeball.png" class="preload-image">
+    </section>
     <section class="content">
-        <!--Título da seção-->
-        <h1 class="content-title"><img src="../assets/img/logo.svg" id="logo"></h1>
-        <!--Listagem de pokemons com lista ordenada-->
+        <!--Section title-->
+        <h1 class="content-title"><img src="/assets/img/logo.svg" id="logo"></h1>
+        <!--Listing pokemons-->
         <ol id="pokemon-list" class="content-list">
             
         </ol>

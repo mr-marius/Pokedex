@@ -1,30 +1,30 @@
 * {
-    /*Reset padrão*/
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-/*Corpo da página*/
+
 body {
-    background-color: #f6f8fc;
+    background-color: #7697a0;
 }
-/*Conteúdo principal*/
+
 .content {
-    background-color: #fff;
+    background-color: #ddddda;
     height: 100vh;
     padding: 1rem;
     width: 100vw;
 }
-/*Título*/
+
 .content-title {
     display: flex;
     justify-content: center;
 }
-/*Logo*/
+
 #logo {
     width: 15rem;
+    margin-bottom: 1rem;
 }
 
 

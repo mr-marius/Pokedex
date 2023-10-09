@@ -1,6 +1,6 @@
-//Criação de um objeto
+//Creation of an object
 const pokeApi = {};
-//Modelo pessoal 
+//People model
 function convertPokemonDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon();
     pokemon.image = pokeDetail.sprites.other.dream_world.front_default;
@@ -14,17 +14,16 @@ function convertPokemonDetailToPokemon(pokeDetail) {
     //console.log(pokemon.type[0]);
     return pokemon
 }
-//Obetendo os detalhes dos pokemons
+//Pokemon details
 pokeApi.getPokemonDeteails = (pokemon) => {
-    //Requisição
+    //Request
     return fetch(pokemon.url)
         .then((response) => response.json())
         .then(convertPokemonDetailToPokemon)
 }
-
+//Function of request
 pokeApi.getPokemons = (offset = 0, limit = 10) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
-    //Requisições
     return fetch(url)
         .then((response) => response.json())
         .then((jasonBody) => jasonBody.results)
